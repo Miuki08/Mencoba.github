@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    padding: 50px;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li .active {
+    background: #fff;
+    color: #5e32da;
+}
+
+.overlay {
+    background-color: rgb(53, 53, 53); /*mengubah warna menjadi hitam*/
+    opacity: 0.6; /*membuat background menjadi transparan*/
+    position: absolute; /*membuat background melayang dan meninggalkan posisi awlnya*/
+    height: 100%; /*membuat lebar background sama dengan lebar header*/
+    width: 100%; /*membuat panjang background sama dengan panjang header*/
+    top: 0; /*menempatkan background pada posisi paling atas*/
+}
+
+section {
+    justify-content: center;
+    align-content: center;
+    margin-top: 16em;
+    /* right: 9em; */
+    color: aliceblue;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 20px;
+}
+
+section a {
+    font-size: 19px;
+    text-decoration: none;
+    color: #5e32da;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.nama {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    z-index: 99;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
